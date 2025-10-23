@@ -1,4 +1,4 @@
-package BD.individual.task1;
+package BD.individual.IndividualAssignment.Java;
 
 public class MatrixMultiplier {
     

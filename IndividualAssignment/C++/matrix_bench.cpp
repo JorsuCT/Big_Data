@@ -10,14 +10,11 @@ namespace MatrixProd {
     using Matrix = std::vector<std::vector<double>>;
 }
 
-// --- Experiment Parameters ---
 constexpr int NUM_REPETITIONS = 5;
 const std::vector<int> MATRIX_SIZES = {256, 512};
-// -----------------------------
 
 void print_matrix_preview(const MatrixProd::Matrix& M, const std::string& name, int N) {
     constexpr int PREVIEW_SIZE = 8;
-    // Using std::cerr for all output
     std::cerr << "\n--- Preview of Result Matrix " << name << " (top-left "
               << std::min(N, PREVIEW_SIZE) << "x" << std::min(N, PREVIEW_SIZE) << ") ---" << std::endl;
     for (int i = 0; i < std::min(N, PREVIEW_SIZE); ++i) {
